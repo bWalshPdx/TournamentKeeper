@@ -12,7 +12,6 @@ namespace Keeper.Service.Tests
     {
         enum Rank { White = 1, Blue = 2, Purple = 3, Brown = 4, Black = 5 };
 
-
         Random rand = new Random();
         public Competitor GenerateCompetitor()
         {
@@ -25,7 +24,7 @@ namespace Keeper.Service.Tests
                                         LastName = getLastName(),
                                         Team = getTeamName(),
                                         Weight = rand.Next(100,270),
-                                        IsMale = rand.Next(0,9) < 3
+                                        IsMale = rand.Next(0,9) > 3
                                     };
             return output;
         }
@@ -137,6 +136,29 @@ Gender = {5}
             }
         }
 
+        [Test]
+        public void sortByGender_InitialTest()
+        {
+            int numberOfCompetitors = 100;
+            MockStuff ms = new MockStuff();
+            var fakeCompetitors = ms.getFakeCompetitors(numberOfCompetitors);
+            Sort s = new Sort();
+
+            var output = s.seperateGender(fakeCompetitors).ToList();
+
+            foreach (var compStack in output)
+            {
+                int genderFlip = 0;
+                bool currentGender = compStack.First().IsMale;
+                foreach (var comp in compStack)
+                {
+                    if (comp.IsMale != currentGender)
+                        genderFlip++;
+                }
+
+                Assert.That(genderFlip == 0);
+            }
+        }
 
         [Test]
         //TODO: Rewrite this test to document why it is failing:
@@ -146,7 +168,8 @@ Gender = {5}
             MockStuff ms = new MockStuff();
             Sort s = new Sort();
             var fakeCompetitors = ms.getFakeCompetitors(numberOfCompetitors);
-            
+
+            //http://www.londoninternationalbjj.com/files/65971007.jpg
             List<double> weightBrackets = new List<double>()
                                            {
                                                125.5,
