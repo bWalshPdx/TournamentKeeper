@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keeper.Service", "Keeper.Service\Keeper.Service\Keeper.Service.csproj", "{EC9EB867-2849-49E7-B7D1-716B72D7BF58}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keeper.Service.Tests", "Keeper.Service.Tests\Keeper.Service.Tests.csproj", "{DC92EC7B-FFDD-45CF-9D55-24316691C826}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keeper.Service", "Keeper.Service\Keeper.Service.csproj", "{5F2E0BAE-C6BC-4D9D-B665-4EB3245E9EBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EC9EB867-2849-49E7-B7D1-716B72D7BF58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC9EB867-2849-49E7-B7D1-716B72D7BF58}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC9EB867-2849-49E7-B7D1-716B72D7BF58}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC9EB867-2849-49E7-B7D1-716B72D7BF58}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DC92EC7B-FFDD-45CF-9D55-24316691C826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DC92EC7B-FFDD-45CF-9D55-24316691C826}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC92EC7B-FFDD-45CF-9D55-24316691C826}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC92EC7B-FFDD-45CF-9D55-24316691C826}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F2E0BAE-C6BC-4D9D-B665-4EB3245E9EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F2E0BAE-C6BC-4D9D-B665-4EB3245E9EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F2E0BAE-C6BC-4D9D-B665-4EB3245E9EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F2E0BAE-C6BC-4D9D-B665-4EB3245E9EBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

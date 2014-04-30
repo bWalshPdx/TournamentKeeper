@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DC92EC7B-FFDD-45CF-9D55-24316691C826}</ProjectGuid>
+    <ProjectGuid>{5F2E0BAE-C6BC-4D9D-B665-4EB3245E9EBC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Keeper.Service.Tests</RootNamespace>
-    <AssemblyName>Keeper.Service.Tests</AssemblyName>
+    <RootNamespace>Keeper.Service</RootNamespace>
+    <AssemblyName>Keeper.Service</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework">
-      <HintPath>..\..\..\..\External\nunit.framework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,16 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Tournament_Tests.cs" />
-    <Compile Include="Mock.cs" />
+    <Compile Include="CommonObjects.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sort_Tests.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Keeper.Service\Keeper.Service.csproj">
-      <Project>{5f2e0bae-c6bc-4d9d-b665-4eb3245e9ebc}</Project>
-      <Name>Keeper.Service</Name>
-    </ProjectReference>
+    <Compile Include="Sort.cs" />
+    <Compile Include="Tournament.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
